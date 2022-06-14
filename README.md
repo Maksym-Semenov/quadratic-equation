@@ -1,1 +1,1 @@
-# quadratic equation
+My trainee concole app for quadratic equation.
