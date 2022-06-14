@@ -17,11 +17,15 @@ namespace quadratic_equation
                 Console.Write("Введите третий коэффициент C ");
                 bool successC = int.TryParse(Console.ReadLine(), out int c);
 
-                Diskriminant diskriminant = new Diskriminant(a, b, c);
+                Diskriminant diskriminant = new Diskriminant();
                 double result = diskriminant.GetDiskriminant(a, b, c);
 
-                Respons respons = new Respons();
-                Console.WriteLine(respons);
+                Respons array = new Respons();
+                double[] respons = array.GetRespons(result, a, b);
+                for (int i = 0; i < respons.Length; i++)
+                {
+                    Console.WriteLine(respons[i]);
+                }
                 Console.ReadLine();
 
                 //if (result < 0)
