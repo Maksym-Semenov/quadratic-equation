@@ -4,7 +4,6 @@ namespace quadratic_equation
 {
     public class Respons
     {
-        
         public double[] GetRespons(double diskriminant, int A, int B)
         {
             if (diskriminant > 0)
@@ -23,6 +22,5 @@ namespace quadratic_equation
             }
             return null;
         }
-        
     }
 }

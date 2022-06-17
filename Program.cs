@@ -40,13 +40,9 @@ namespace quadratic_equation
                 Respons array = new Respons();
                 double[] response = array.GetRespons(result, a, b);
 
-                if (response == null)
-                    Console.WriteLine("Уравнение не имеет рациональных корней");
-                else if (response[0] != response[1])
-                    Console.WriteLine($"Дискриминант больше 0, поэтому есть два решения: X1 = {response[0]}, X2 = {response[1]}");
-                else if(response[0] == response[1])
-                    Console.WriteLine($"Дискриминант равен 0, поэтому есть два одинаковых решения: X1 = X2 = {response[0]}");
-                Console.ReadLine();
+                Answers answer = new Answers();
+                string reply = answer.GetAnswer(response);
+                Console.WriteLine(reply);
             }
         }
     }
