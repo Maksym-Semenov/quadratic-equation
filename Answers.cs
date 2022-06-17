@@ -3,8 +3,7 @@ namespace quadratic_equation
 {
     public class Answers
     {
-        private double[] array;
-        public string GetAnswer(double []array)
+        public string GetAnswer(double[] array)
         {
             if (array == null)
                return "Уравнение не имеет рациональных корней";
